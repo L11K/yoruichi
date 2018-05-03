@@ -9,17 +9,12 @@ module.exports = class setGameCommand extends commando.Command {
 			'aliases': ['setplay', 'stp'],
 			'description': 'Set bots game',
 			'examples': ['setgame <game>'],
-			'guildOnly': false,
-			'args': [
-				{
-					'key': 'game',
-					'type': 'string'
-				}
-			]
+			'guildOnly': false
 		});
 	}
-    run (message, args, game) {
+    run (message, args) {
 		if (message.author.id === '366677235597574155') {
+	let game = args.join;
         this.client.user.setActivity(game).then(message.reply("Here my new playing status : " + game))
       } else {
         if (!message.author.id === '366677235597574155') {
