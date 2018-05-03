@@ -25,7 +25,7 @@ run(message, args) {
     } else {
         if (!message.mentions.users.first()) {
             const embed = new RichEmbed()
-            .setDescription("Yoruichi bites with you **giggles** :heart: ")
+            .setDescription("Yoruichi bites you **giggles** :heart: ")
             .setColor(embedcolor)
             .setImage(`${imageArray[bite]}`)
             message.channel.send({embed: embed});
