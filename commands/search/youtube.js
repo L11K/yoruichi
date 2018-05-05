@@ -3,7 +3,7 @@ const moment = require('moment');
 const youtube = new YouTube();
 const commando = require('discord.js-commando');
 const { RichEmbed } = require('discord.js');
-youtube.setKey("AIzaSyCicVIV4BXjNsxTKlgkvu14qB92fVUZYVU");
+youtube.setKey(process.env.YOUTUBE_API);
 youtube.addParam('type', 'video');
 youtube.addParam('relevanceLanguage', 'en');
 youtube.addParam('safeSearch', 'moderate');
