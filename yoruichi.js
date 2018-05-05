@@ -4,7 +4,7 @@ const path = require('path');
 const sqlite = require('sqlite');
 const canvas = require('canvas');
 const client = new Commando.Client({
-    'owner': '366677235597574155',
+    'owner': process.env.OWNER_ID,
     'prefix': '!',
     'disableEveryone': true,
     'unknownCommandResponse': false
