@@ -13,10 +13,10 @@ module.exports = class dndCommand extends commando.Command {
 		});
 	}
     run (message) {
-		if (message.author.id == OWNER_ID) {
+		if (message.author.id == '366677235597574155') {
 		this.client.user.setPresence({'status': 'dnd'}).then(message.channel.send('My status has been set to do not disturb' + ' ' + message.author.tag + '!'));
 		} else {
-			if (message.author.id !== OWNER_ID) {
+			if (message.author.id !== '366677235597574155') {
 				message.channel.send("You're not my owner.")
 			}
 		}
